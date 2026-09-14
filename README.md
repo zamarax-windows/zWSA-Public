@@ -27,7 +27,11 @@ Pick the root solution you want. Every package includes Google Play.
 
 Download `zWSA_Setup_x64.exe` (or the `.msi`), run it, and choose
 **Magisk**, **KernelSU**, or **None** when prompted. The installer downloads the
-matching package and finishes the setup automatically.
+matching package, registers it, launches WSA, installs the chosen root manager
+automatically, and opens the Play Store for sign-in.
+
+> These releases are **binary-only** — built WSA packages and installers, no
+> source code.
 
 ### Manual install (from a `.zip`)
 
