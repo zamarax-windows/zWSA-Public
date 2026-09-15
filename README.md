@@ -27,8 +27,9 @@ Pick the root solution you want. Every package includes Google Play.
 
 Download `zWSA_Setup_x64.exe` (or the `.msi`), run it, and choose
 **Magisk**, **KernelSU**, or **None** when prompted. The installer downloads the
-matching package, registers it, launches WSA, installs the chosen root manager
-automatically, and opens the Play Store for sign-in.
+matching package, registers it, and launches WSA. The chosen root manager (Magisk
+or KernelSU) is already included in the image and installs automatically on first
+boot; Google Play opens for sign-in.
 
 > These releases are **binary-only** — built WSA packages and installers, no
 > source code.
@@ -54,9 +55,11 @@ required before WSA boots).
 
 ## Root solutions
 
-- **Magisk** — systemless root with the largest module ecosystem.
+- **Magisk** — systemless root with the largest module ecosystem. The Magisk
+  app is included and installs automatically on first boot.
 - **KernelSU** — kernel-level root with no Magisk; better for apps that detect
-  root (banking apps, Microsoft Authenticator).
+  root (banking apps, Microsoft Authenticator). The KernelSU manager is included
+  and installs automatically on first boot.
 - **None** — Google Play with no root.
 
 **Not supported on WSA x86_64:** aPatch (ARM64-only) and KernelSU-Next (no
