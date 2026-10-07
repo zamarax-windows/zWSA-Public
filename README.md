@@ -57,6 +57,10 @@ required before WSA boots).
 
 - **Magisk** — systemless root with the largest module ecosystem. The Magisk
   app is included and installs automatically on first boot.
+  > Note: Magisk root is **pre-applied** to the image. Inside the Magisk app,
+  > the "Install" (patch boot image) button will report *"unable to detect
+  > target image — installation failed"* — this is expected on WSA (there is
+  > no boot partition exposed to patch) and is not an error. Root works.
 - **KernelSU** — kernel-level root with no Magisk; better for apps that detect
   root (banking apps, Microsoft Authenticator). The KernelSU manager is included
   and installs automatically on first boot.
